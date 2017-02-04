@@ -1,3 +1,4 @@
+var figlet = require('figlet');
 var express = require('express');
 var exec = require('child_process').exec;
 var app = express();
@@ -12,8 +13,15 @@ app.get('/foo', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  const response = process.env.RESPONSE || 'Hello world';
-  res.send(response);
+  figlet('Hello World!!', function(err, data) {
+    if (err) {
+        console.log('Something went wrong...');
+        console.dir(err);
+        return;
+    }
+    res.send(data);
+  });
+
 });
 
 /* Use PORT environment variable if it exists */
