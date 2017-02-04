@@ -1,1 +1,1 @@
-web: node foo.js
+web: node:6.2.1 foo.js
