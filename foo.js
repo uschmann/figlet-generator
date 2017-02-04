@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
         console.dir(err);
         return;
     }
-    res.send(data);
+    res.send('<pre>' + data + '</pre>');
   });
 
 });
