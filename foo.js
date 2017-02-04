@@ -13,7 +13,8 @@ app.get('/foo', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  figlet('Hello World!!', function(err, data) {
+  const { text } = req.query;
+  figlet(text || 'Hello World!!', function(err, data) {
     if (err) {
         console.log('Something went wrong...');
         console.dir(err);
