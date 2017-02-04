@@ -8,12 +8,12 @@ app.get('/healthz', function(req, res){
 });
 
 app.get('/foo', (req, res) => {
-  res.send('bar');
+  res.send('qwertz');
 });
 
 app.get('/', (req, res) => {
   const response = process.env.RESPONSE || 'Hello world';
-  res.send(req.query);
+  res.send(response);
 });
 
 /* Use PORT environment variable if it exists */
