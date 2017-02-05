@@ -12,7 +12,6 @@ class Figlet extends React.Component {
     const { figlet } = this.props;
     return (
       <div>
-        <h1>Figlet</h1>
         <pre>
         { figlet }
         </pre>
