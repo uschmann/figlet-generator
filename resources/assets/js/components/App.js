@@ -2,6 +2,7 @@
 
 import React from 'react';
 import axios from 'axios';
+import random from 'random-name';
 import Figlet from './Figlet';
 import TextInput from './TextInput';
 import { Container, Row, Col } from './bootstrap';
@@ -12,6 +13,10 @@ export default class App extends React.Component {
     super(props);
     this.state = { figlet: '' };
     this.onText = this.onText.bind(this);
+  }
+
+  componentDidMount() {
+    this.onText(random.place());
   }
 
   onText(text) {
