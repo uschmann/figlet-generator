@@ -104066,7 +104066,7 @@ var App = function (_React$Component) {
 
       return _react2.default.createElement(
         _bootstrap.Container,
-        { isFluid: true },
+        null,
         _react2.default.createElement(
           _bootstrap.Row,
           null,

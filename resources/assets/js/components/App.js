@@ -30,7 +30,7 @@ export default class App extends React.Component {
   render() {
     const { figlet, text } = this.state;
     return (
-      <Container isFluid={true}>
+      <Container>
         <Row>
           <Col size={{md:12}}>
             <h1>Figlet generator</h1>
