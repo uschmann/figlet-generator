@@ -10,7 +10,16 @@
     "node": "6.2.x"
   },
   "dependencies": {
+    "axios": "^0.15.3",
     "express": "4.14.x",
-    "figlet": "^1.2.0"
+    "express-handlebars": "^3.0.0",
+    "figlet": "^1.2.0",
+    "gulp": "^3.9.1",
+    "laravel-elixir": "^6.0.0-15",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "laravel-elixir-browserify-official": "^0.1.3"
   }
 }
