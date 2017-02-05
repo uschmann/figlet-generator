@@ -21988,6 +21988,11 @@ var App = function (_React$Component) {
           _react2.default.createElement(
             _bootstrap.Col,
             { size: { md: 6 } },
+            _react2.default.createElement(
+              'label',
+              null,
+              'Result'
+            ),
             _react2.default.createElement(_Figlet2.default, { figlet: figlet })
           )
         )

@@ -36,6 +36,7 @@ export default class App extends React.Component {
             <TextInput onText={this.onText} />
           </Col>
           <Col size={{md:6}}>
+            <label>Result</label>
             <Figlet figlet={figlet} />
           </Col>
         </Row>
