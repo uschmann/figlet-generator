@@ -38,11 +38,11 @@ export default class App extends React.Component {
         </Row>
         <Row>
           <Col size={{md:6}}>
-            <TextInput onText={this.onText} />
-          </Col>
-          <Col size={{md:6}}>
             <label>Result</label>
             <Figlet figlet={figlet} />
+          </Col>
+          <Col size={{md:6}}>
+            <TextInput onText={this.onText} />
           </Col>
         </Row>
       </Container>
